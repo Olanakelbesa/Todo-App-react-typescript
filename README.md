@@ -19,8 +19,7 @@ A simple ToDo application built with React and TypeScript. This app allows users
 7. [Types](#types)
    - [todo.d.ts](#tododts)
 8. [Screenshot](#screenshot)
-9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ## Features
 
