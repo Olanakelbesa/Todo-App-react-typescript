@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		300deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(116, 86, 21, 1) 54%
+	);
+}
+
+.App {
+	box-shadow: rgba(15, 126, 238, 0.1) 0px 8px 24px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 200px;
+	left: 50%;
+	padding: 40px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 650px; /* Set the maximum width */
+	margin: 0 auto;
+	margin-top: 40px;
+	background: rgba(242, 213, 160, 0.2);
+	border: 1px solid rgba(116, 86, 21, 1);
+}
+
+.header {
+	background: rgb(159, 112, 3);
+	color: white;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	/* border: 2px solid red; */
+	border-radius: 10px;
+	position: static;
+}
+
+.logoside {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logoside > svg {
+	font-size: 1.5rem;
+	margin: 0 10px;
+	animation: spin 6s linear infinite;
+	color: rgba(83, 55, 1, 0.849);
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
