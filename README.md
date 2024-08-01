@@ -1,30 +1,109 @@
-# React + TypeScript + Vite
+# ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple ToDo application built with React and TypeScript. This app allows users to add, edit, delete, and mark tasks as completed.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+   - [Running the Application](#running-the-application)
+4. [Project Structure](#project-structure)
+5. [Components](#components)
+   - [Todo.tsx](#todotsx)
+   - [TodoForm.tsx](#todoformtsx)
+6. [Services](#services)
+   - [todoService.ts](#todoservicets)
+7. [Types](#types)
+   - [todo.d.ts](#tododts)
+8. [Screenshot](#screenshot)
+9. [Contributing](#contributing)
+10. [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- Responsive design
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- React
+- TypeScript
+- CSS
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Make sure you have the following installed on your local machine:
+
+- Node.js (>= 12.x)
+- npm (>= 6.x) or yarn (>= 1.x)
+
+### Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/yourusername/todo-app-react-typescript.git
+2. Navigate to the project directory
+   ```bash
+   cd todo-app-react-typescript
+3. Install dependencies
+   ```bash
+   npm install
+   
+### Running the Application
+To start the development server, run:
+```bash
+ npm start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Project Structure
+```bash
+.
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── Todo.tsx
+│   │   └── TodoForm.tsx
+│   ├── services
+│   │   └── todoService.ts
+│   ├── types
+│   │   └── todo.d.ts
+│   ├── App.tsx
+│   ├── index.css
+│   ├── index.tsx
+│   └── ...
+├── README.md
+└── package.json
+```
+## Components
+### Todo.tsx
+The Todo component is responsible for displaying the list of tasks, and providing functionalities to edit, delete, and mark tasks as completed.
+
+### TodoForm.tsx
+The TodoForm component provides a form for adding new tasks.
+
+### Services
+#### todoService.ts
+The TodoService manages the CRUD operations for the tasks.
+
+### Types
+#### todo.d.ts
+Defines the TypeScript types used in the project.
+
+## Screenshot
+![Screenshot 2024-08-01 173804](https://github.com/user-attachments/assets/11d20a54-096f-4dd8-8a10-64f31820cbc1)
+
+
